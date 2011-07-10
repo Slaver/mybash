@@ -1,8 +1,8 @@
 # enable programmable completion features 
 
 # bash completion settings (actually, these are readline settings)
-bind "set completion-ignore-case on" #note: bind used instead of sticking these in .inputrc
-bind "set show-all-if-ambiguous on"  #show list automatically, without double tab
+#bind "set completion-ignore-case on" #note: bind used instead of sticking these in .inputrc
+#bind "set show-all-if-ambiguous on"  #show list automatically, without double tab
 
 if [ -f /etc/bash_completion ]; then
         source /etc/bash_completion
