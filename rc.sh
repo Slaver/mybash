@@ -37,6 +37,10 @@ export VISUAL=$EDITOR
 export SVN_EDITOR=$EDITOR
 export GIT_EDITOR=$EDITOR
 
+# hostname
+HOSTNAME="`[ -f /etc/hostname ] && cat /etc/hostname`"
+[ -z "$HOSTNAME" ] && HOSTNAME=$HOST
+
 complete -C rails-complete -o default rails
 
 if [ -f ~/.bash/colors.sh ]; then

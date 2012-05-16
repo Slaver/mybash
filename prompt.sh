@@ -38,9 +38,9 @@ function prompt_func() {
     my_ps_path="\[\033[01;36m\]\w\[\033[00m\]";
 
    case $HOSTNAME in
-    "slaver") my_ps_host="\[\033[01;32m\]\h\[\033[00m\]";
+    "slaver") my_ps_host="\[\033[01;32m\]$HOSTNAME\[\033[00m\]";
             ;;
-    * ) my_ps_host="\[\033[01;31m\]\h\[\033[00m\]";
+    * ) my_ps_host="\[\033[01;31m\]$HOSTNAME\[\033[00m\]";
             ;;
    esac
 
