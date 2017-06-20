@@ -1,1 +1,7 @@
 My ~/.bash/*
+
+~/.bashrc:
+
+if [ -f ~/.bash/rc.sh ]; then
+	source ~/.bash/rc.sh
+fi
